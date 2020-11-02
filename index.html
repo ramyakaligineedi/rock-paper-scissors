@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="app.js" defer></script>
+  <title>Skill Safari | Rock, Paper, Scissors</title>
+</head>
+<body>
+  <div class="main">
+    <div class="titleAndScore">
+      <div class="titleLogo">
+        <h1>ROCK</h1>
+        <h1>PAPER</h1>
+        <h1>SCISSORS</h1>
+      </div>
+      <div class="score">
+        <div class="scoreTitle">SCORE</div>
+        <div class="nbScore">0</div>
+      </div>
+    </div>
+    <div class="game">
+        <div class="paperDiv">
+          <img src="images-20201024T112742Z-001/images/icon-paper.svg" class="paper icon">
+        </div>
+        <div class="rockDiv">
+          <img src="images-20201024T112742Z-001/images/icon-rock.svg" class="rock icon">
+        </div>
+        <div class="scissorsDiv">
+          <img src="images-20201024T112742Z-001/images/icon-scissors.svg" class="scissors icon">
+        </div>
+    </div>
+
+    <!-- Choices -->
+
+    <div class="choices">
+      <div class="youPicked">
+        <div class="pickedMsg">YOU PICKED</div>
+        <div class="paperChoice">
+          <img src="images-20201024T112742Z-001/images/icon-paper.svg" class="paper icon">
+        </div>
+
+        <div class="scissorsChoice">
+          <img src="images-20201024T112742Z-001/images/icon-scissors.svg" class="scissors icon">
+        </div>
+
+        <div class="rockChoice">
+          <img src="images-20201024T112742Z-001/images/icon-rock.svg" class="rock icon">
+        </div>
+
+      </div>
+
+      <div class="housePicked">
+        <div class="pickedMsg">THE HOUSE PICKED</div>
+          <div class="noChoiceYet">
+          </div>
+
+          <div class="paperChoice" id="computerPaper">
+            <img src="images-20201024T112742Z-001/images/icon-paper.svg" class="paper icon">
+          </div>
+  
+          <div class="scissorsChoice" id="computerScissors">
+            <img src="images-20201024T112742Z-001/images/icon-scissors.svg" class="scissors icon">
+          </div>
+  
+          <div class="rockChoice" id="computerRock">
+            <img src="images-20201024T112742Z-001/images/icon-rock.svg" class="rock icon">
+          </div>
+      </div>
+    </div>
+
+    <!-- Result -->
+
+    <div class="result">
+      <div class="youPicked">
+        <div class="pickedMsg">YOU PICKED</div>
+        <div class="paperChoice" id="paperResult">
+          <img src="images-20201024T112742Z-001/images/icon-paper.svg" class="paper icon">
+        </div>
+
+        <div class="scissorsChoice" id="scissorsResult">
+          <img src="images-20201024T112742Z-001/images/icon-scissors.svg" class="scissors icon">
+        </div>
+
+        <div class="rockChoice" id="rockResult">
+          <img src="images-20201024T112742Z-001/images/icon-rock.svg" class="rock icon">
+        </div>
+
+      </div>
+
+      <div class="printResult winOrLose">
+        <div class="youWin">YOU WIN</div>
+        <div class="youLose">YOU LOSE</div>
+        <button class="playAgain">PLAY AGAIN</button>
+      </div>
+  
+      <div class="housePicked">
+        <div class="pickedMsg">THE HOUSE PICKED</div>
+
+          <div class="paperChoice" id="paperResultComputer">
+            <img src="images-20201024T112742Z-001/images/icon-paper.svg" class="paper icon">
+          </div>
+  
+          <div class="scissorsChoice" id="scissorsResultComputer">
+            <img src="images-20201024T112742Z-001/images/icon-scissors.svg" class="scissors icon">
+          </div>
+  
+          <div class="rockChoice" id="rockResultComputer">
+            <img src="images-20201024T112742Z-001/images/icon-rock.svg" class="rock icon">
+          </div>
+      </div>
+    </div>
+
+    <!-- Rules -->
+
+    <div class="rules">
+      <p>RULES</p>
+    </div>
+  
+    <div class="rulesPic">
+      <div class="rulesTitleClose">
+        <h4>RULES</h4>
+        <img src="images-20201024T112742Z-001/images/icon-close.svg" class="close">
+      </div>
+      <img src="images-20201024T112742Z-001/images/image-rules.svg" class="imgRules">
+    </div>
+</body>
+</html>
